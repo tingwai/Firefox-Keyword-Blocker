@@ -8,12 +8,12 @@
 	
 
 ## Before 
-https://i.postimg.cc/vD03fNcP/1.png
+https://raw.githubusercontent.com/MichaelSebero/Firefox-Keyword-Blocker/refs/heads/main/before%20%26%20after/before.png
 	
 > Hiding keywords JLC3DP and SQTDDTOT.
 
 ## After
-https://i.postimg.cc/5XCgc9pG/2.png
+https://raw.githubusercontent.com/MichaelSebero/Firefox-Keyword-Blocker/refs/heads/main/before%20%26%20after/after.png
 	
 > Keywords hidden.
 
