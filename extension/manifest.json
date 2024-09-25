@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Keyword Blocker",
   "version": "1.0",
   "description": "Hides elements containing specified keywords",
@@ -13,7 +13,7 @@
     "storage",
     "tabs"
   ],
-  "action": {
+  "browser_action": {
     "default_icon": {
       "16": "icons/icon-16.png",
       "48": "icons/icon-48.png",
@@ -23,8 +23,7 @@
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["background.js"],
-    "type": "module"
+    "scripts": ["background.js"]
   },
   "content_scripts": [
     {
@@ -34,7 +33,7 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "keyword-blocker@example.com"
+      "id": "{a9bda7e0-faf1-4c52-a36f-3ac880ab417d}"
     }
   }
 }
