@@ -4,7 +4,7 @@
 ## Features
 . Block keywords on search results, forums, video platforms, and associated images.
 
-. Real-time keyword filtering.
+. Real-time keyword blocking.
 	
 
 ## Before 
