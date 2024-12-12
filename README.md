@@ -21,4 +21,4 @@ https://raw.githubusercontent.com/Michael-Sebero/Firefox-Keyword-Blocker/refs/he
 ## Donations and Contacts
 PayPal: https://www.paypal.com/donate/?cmd=_donations&business=YYGU9JWJEE2AG
 
-My Website: https://greenlightsuccess.webflow.io
+Email: michaelsebero@disroot.org
