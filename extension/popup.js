@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const textarea = document.getElementById('keywords');
   const applyButton = document.getElementById('apply');
   const statusDiv = document.getElementById('status');
+  const filterCheckbox = document.getElementById('toggleFilter');
 
   function updateStatus(message) {
     statusDiv.textContent = message;
@@ -28,5 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
         updateStatus(`Saved ${keywords.length} keywords: ${keywords.join(', ')}`);
       }
     });
+  });
+
+  // Toggle filter when checkbox is clicked
+  filterCheckbox.addEventListener('change', () => {
+    const newState = filterCheckbox.checked;
+    browser.runtime.sendMessage({
+      action: "setFilter",
+      enabled: newState
+    });
+  });
+
+  // Initialize checkbox state when popup opens
+  browser.storage.local.get("filterEnabled", (data) => {
+    filterCheckbox.checked = data.filterEnabled !== undefined ? data.filterEnabled : true;
   });
 });

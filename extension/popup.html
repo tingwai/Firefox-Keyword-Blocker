@@ -24,10 +24,25 @@
       margin-top: 10px;
       color: #666;
     }
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      gap: 10px;
+    }
+    #toggleFilter {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <h2>Keyword Blocker</h2>
+  <div class="toggle-container">
+    <input type="checkbox" id="toggleFilter" checked>
+    <label for="toggleFilter">Enable Content Filter</label>
+  </div>
   <p>Enter keywords to block, separated by commas:</p>
   <textarea id="keywords"></textarea>
   <button id="apply">Apply</button>
